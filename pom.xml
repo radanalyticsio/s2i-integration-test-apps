@@ -46,7 +46,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>com.mycompany.app.JavaSparkpi</mainClass>
+              <mainClass>com.mycompany.app.JavaSparkPi</mainClass>
             </manifest>
           </archive>
         </configuration>
