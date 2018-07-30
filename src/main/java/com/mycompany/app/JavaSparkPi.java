@@ -9,7 +9,7 @@
  */
 
 // We need comment here to bump the commit hash
-package org.apache.spark.examples;
+package com.mycompany.app;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
