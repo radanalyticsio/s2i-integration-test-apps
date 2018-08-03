@@ -27,6 +27,7 @@ import java.util.List;
 public final class JavaSparkPi {
 
   public static void main(String[] args) throws Exception {
+    System.out.println("test app started");
     SparkConf sparkConf = new SparkConf().setAppName("JavaSparkPi");
     JavaSparkContext jsc = new JavaSparkContext(sparkConf);
 
