@@ -6,6 +6,8 @@ import numpy
 from pyspark import SparkConf
 from pyspark import SparkContext
 
+print("test app started")
+
 conf = SparkConf()
 conf.setAppName('spark-basic')
 sc = SparkContext(conf=conf)
