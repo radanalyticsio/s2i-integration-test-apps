@@ -22,6 +22,19 @@
     </dependency>
   </dependencies>
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>findbugs-maven-plugin</artifactId>
+          <configuration>
+            <maxRank>6</maxRank>
+            <effort>Max</effort>
+            <xmlOutput>true</xmlOutput>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
@@ -55,6 +68,19 @@
             <phase>package</phase>
             <goals>
               <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>findbugs-check</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>check</goal>
             </goals>
           </execution>
         </executions>
