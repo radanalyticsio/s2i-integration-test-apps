@@ -53,7 +53,7 @@ public final class JavaSparkPi {
       }
     });
 
-    System.out.println("Pi is rouuuughly " + 4.0 * count / n);
+    System.out.println("Pi is roughly " + 4.0 * count / n)
     System.out.println("test app completed");
     jsc.stop();
   }
